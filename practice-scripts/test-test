@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# test is a way of evaluating the truthiness of an expression.
+
+# the result of the test function is represented by the exit status
+
+test 1 -gt 2; # -gt option = greater than
+echo $?
+
+
+## gives an exit status of 1 because it's false
+
+test 3 -gt 2;
+echo $?
+
+## gives an exit status of 0 because it's true
+
+
+## using the test command is the equivalent of evaluating an expression inside of brackets
+
+
+[ 1 -gt 2 ];
+echo $?
