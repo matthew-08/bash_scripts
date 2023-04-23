@@ -1,0 +1,7 @@
+#!/bin/sh -x
+
+#Every command in linux has an exit status
+#The exit status represents whether or not the command ran succesfully (value of 0) or failed (1-256)
+
+echo "hello" \
+echo $?

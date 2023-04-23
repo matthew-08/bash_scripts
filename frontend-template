@@ -1,7 +1,6 @@
 #!/bin/sh
 
 set -e
-set -x
 if [ $1 -eq0 ]; then
     echo "No filename given" >&2
 mkdir template-$1 && cd $_
