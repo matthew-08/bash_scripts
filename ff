@@ -1,0 +1,13 @@
+#!/bin/sh
+if [[ $# -eq 0 ]]; 
+then
+    echo "No filename given"
+else
+mkdir template-"$1" && cd "$_"
+git clone https://github.com/matthew-08/frontend-template;
+cp -r ./frontend-template/client .
+rm -r -f frontend-template
+cd client || return 
+code .
+npm install
+fi

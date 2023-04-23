@@ -1,0 +1,5 @@
+alias-ls:
+    list this file (all aliases)
+gen-ts:
+    generates a typescript/react template
+

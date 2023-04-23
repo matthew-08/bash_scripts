@@ -19,5 +19,5 @@ echo $?
 ## using the test command is the equivalent of evaluating an expression inside of brackets
 
 
-[ 1 -gt 2 ];
+[ 2 -gt 2 ];
 echo $?
