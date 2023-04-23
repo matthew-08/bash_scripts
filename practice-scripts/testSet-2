@@ -1,0 +1,13 @@
+#!/bin/sh
+# shellcheck enable=warnings
+
+# -x sets option 
+set -x
+
+echo "this will be logged"
+
+# +x disables the option
+set +x 
+
+echo "this will not"
+

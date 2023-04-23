@@ -1,0 +1,14 @@
+#!/bin/bash-x
+
+
+MyName=Matthew
+MySalary=0
+
+echo $MyName
+set +x
+echo $MySalary
+
+set -x
+
+MyLanguage=English
+echo $MyLanguage
