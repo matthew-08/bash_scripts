@@ -4,5 +4,6 @@ gen-ts:
     generates a typescript/react template
 yts:
     youtube search
-    
 
+git-repos:
+    list all git repos

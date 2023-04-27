@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Enter an alias name:"
+read ALIAS
+echo "Enter a description:"
+read DESC
+
+printf "
+alias $ALIAS=\'bash $ALIAS\'" >> ~/.bashrc
+printf "
+$ALIAS:
+    $DESC
+" >> ./alias-list/list.txt
