@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Available decks:"
+sqlite3 /home/matthew/.local/share/Anki2/User\ 1/collection.anki2 'SELECT name FROM decks'
+echo -n "Choose a deck: "
+read -r name
+
+echo "Selected deck: $name"
+
+echo -n "Question (front-side) of card: "
+read -r question
+echo -n "Answer (back-side) of card: "
+read -r answer
+
+sqlite3 /home/matthew/.local/share/Anki2/User\ 1/collection.anki2 'INSERT INTO '
+
+
+notes: 
+noteId - auto generated
