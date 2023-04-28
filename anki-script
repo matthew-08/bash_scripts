@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Available decks:"
-sqlite3 /home/matthew/.local/share/Anki2/User\ 1/collection.anki2 'SELECT name FROM decks'
+sqlite3 $HOME/.local/share/Anki2/User\ 1/collection.anki2 'SELECT name FROM decks'
 echo -n "Choose a deck: "
 read -r name
 
