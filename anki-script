@@ -5,15 +5,26 @@ sqlite3 /home/matthew/.local/share/Anki2/User\ 1/collection.anki2 'SELECT name F
 echo -n "Choose a deck: "
 read -r name
 
-echo "Selected deck: $name"
+echo "Selected deck: $NAME"
 
-echo -n "Question (front-side) of card: "
-read -r question
-echo -n "Answer (back-side) of card: "
-read -r answer
+echo -n "(front-side) of card: "
+read -r FRONT
+echo -n "(back-side) of card: "
+read -r BACK
 
-sqlite3 /home/matthew/.local/share/Anki2/User\ 1/collection.anki2 'INSERT INTO '
-
-
-notes: 
-noteId - auto generated
+curl localhost:8765 -X POST -d "{
+    \"action\": \"addNotes\",
+    \"version\": 6,
+    \"params\": {
+        \"notes\": [
+            {
+                \"deckName\": \"Default\",
+                \"modelName\": \"Basic\",
+                \"fields\": {
+                    \"Front\": \"$FRONT\",
+                    \"Back\": \"back content\"
+                }
+            }
+        ]
+    }
+}"
