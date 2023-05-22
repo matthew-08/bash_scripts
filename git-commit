@@ -8,4 +8,5 @@ select opt in "${options[@]}"; do
     read -p "Enter commit message: " msg
     git add .
     git commit -m "\"[$opt]: $msg\""
+    exit    
 done;
