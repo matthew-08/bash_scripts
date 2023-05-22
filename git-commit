@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 echo "Choose type of commit message"
 options=('FEAT' 'FIX' 'FEAT' 'CHORE' 'TEST' 'STYLE' 'REFACTOR')
 
