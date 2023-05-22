@@ -1,0 +1,11 @@
+#!/bin/bash
+#!/bin/bash
+echo "Choose type of commit message"
+options=('FEAT' 'FIX' 'FEAT' 'CHORE' 'TEST' 'STYLE' 'REFACTOR')
+
+
+select opt in "${options[@]}"; do 
+    read -p "Enter commit message: " msg
+    git add .
+    git commit -m "\"[$opt]: $msg\""
+done;

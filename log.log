@@ -1,0 +1,4 @@
+Choose type of commit message
+1) FEAT	     3) FEAT	  5) TEST      7) REFACTOR
+2) FIX	     4) CHORE	  6) STYLE
+#? Enter commit message: 
